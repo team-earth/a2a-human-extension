@@ -1,8 +1,20 @@
 # A2A Human-Aligned Extension
 
+
+
 This repository proposes a structured extension to Google's [Agent-to-Agent (A2A) protocol](https://google-a2a.github.io/A2A/specification/) to support real-world, human-led programs and institutions using the G-O-S-R model (Goal ← Obstacles ← Solutions ← Resources).
 
-It defines agent structures such as `ProgramCard`, `ParticipationTemplate`, and `operating_character` metadata blocks, allowing civic entities, nonprofits, governments, and grassroots programs to participate in agent ecosystems alongside LLM-based agents.
+It defines agent structures like `ProgramCard`, `ParticipationTemplate`, and `operating_character` blocks—enabling civic and institutional actors to participate meaningfully in agent ecosystems alongside AI-based agents.
+
+**📄 Read the full proposal:**  
+👉 [doc/Extending-A2A-Human.md](doc/Extending-A2A-Human.md)
+
+
+> **About Google A2A**  
+> The Agent-to-Agent (A2A) protocol is an open, draft specification introduced by Google on April 9, 2025. It enables software agents—including AI models and automated systems—to communicate, share tasks, and coordinate action in a structured, interoperable way across platforms and organizations.
+
+> **Why does A2A matter?**  
+> A2A defines a shared language for software agents to collaborate automatically. This extension brings human-led programs—such as nonprofits, civic groups, and public institutions—into that ecosystem, enabling meaningful coordination between AI and real-world initiatives.
 
 ---
 
@@ -10,7 +22,7 @@ It defines agent structures such as `ProgramCard`, `ParticipationTemplate`, and 
 
 - Extend A2A protocol to represent human-aligned entities  
 - Support structured discovery and collaboration via AgentCards  
-- Encode motivational, communicative, and governance metadata using recognized frameworks (e.g., Spiral Dynamics, Hofstede)
+- Encode motivational, communicative, and governance metadata using recognized frameworks (e.g. Spiral Dynamics, Hofstede)
 
 ---
 
