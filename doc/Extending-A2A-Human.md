@@ -38,7 +38,7 @@ By extending A2A with these human-aligned structures, we aim to create a **publi
 
 *The following pages detail the reasoning, design options, and open questions for this approach. Your feedback and participation are welcome.*
 
-**I.A — What Problem Are We Trying to Solve?**
+## I.A — What Problem Are We Trying to Solve?
 
 Amid the swirl of crises and initiatives that define our time — food insecurity, loneliness, environmental degradation, civic disengagement — it often feels like everyone is trying to help, and yet no one can quite see the whole. Organizations build programs. Governments fund services. Communities mobilize. But the system as a whole remains opaque, fragmented, and difficult to navigate or learn from.
 
@@ -50,7 +50,7 @@ The problem G-O-S-R aims to solve, then, is not how to coordinate everyone under
 
 We’re not trying to create control. We’re trying to create clarity.
 
-**I.B — The Limits of Centralized Coordination**
+## I.B — The Limits of Centralized Coordination
 
 Across many fields, there’s a familiar pattern: when challenges become complex or large-scale, efforts often move toward coordination. Central offices are created, shared platforms are proposed, and structures are introduced to help bring alignment. This tendency can make sense — coordination may offer consistency, efficiency, or even safety in uncertainty.
 
@@ -62,7 +62,7 @@ These observations don’t point to a clear right or wrong. They suggest a tensi
 
 This inquiry continues throughout the rest of this discussion.
 
-**I.C — A Public Map for Distributed Alignment**
+## I.C — A Public Map for Distributed Alignment
 
 If coordination is one response to complexity, another might be visibility. What if, rather than attempting to organize activity from above, the focus shifted toward helping efforts see one another? What forms of alignment might become possible if the landscape of work — goals, obstacles, efforts underway — were more legible to those who wish to engage?
 
@@ -72,7 +72,7 @@ Still, the idea remains intriguing: Could a more flexible, collectively understa
 
 This is not necessarily about comprehensive tracking or evaluation. It may be more about offering structure to help people and organizations find their place in a larger pattern — not through mandates, but through perspective. In this way, alignment doesn’t need to be enforced. It might instead emerge from shared understanding.
 
-**II.A — Overview of the G-O-S-R Structure**
+## II.A — Overview of the G-O-S-R Structure
 
 Between shared intentions and practical action, there is often a gap — not of will, but of structure. The G-O-S-R model offers one way of navigating that space. It does so not by prescribing solutions, but by helping people and organizations see how their efforts — or their potential contributions — relate to a focused path of change.
 
@@ -88,7 +88,7 @@ This structure invites a different kind of engagement. Rather than asking, “Wh
 
 Step by step, the landscape becomes more visible — and more navigable.
 
-**II.B — How Resources Differ from Implementors**
+## II.B — How Resources Differ from Implementors
 
 In the G-O-S-R model, a **Resource** is not an organization, a person, or a team — at least not directly. A Resource refers to a **program, initiative, or offering** through which a specific Solution is being (or could be) implemented. The entity responsible for that Resource — the actor that designs, runs, or supports it — is the **Implementor**.
 
@@ -102,7 +102,7 @@ There is also a subtler effect. When coordination systems are built around organ
 
 This does not remove the need for clear actors or accountability. It simply reframes how shared work can be seen — not as a map of organizational turf, but as a collection of ongoing, interconnected efforts that others might learn from, adapt, or join.
 
-**II.C – Why Alignment Matters More Than Orchestration**
+## II.C – Why Alignment Matters More Than Orchestration
 
 Orchestration implies central control: a conductor assigning parts, a planner issuing directives. But the scale and diversity of real-world actors — nonprofits, community groups, agencies, volunteers — defy that model.
 
@@ -112,7 +112,7 @@ This is the promise of the G-O-S-R model: by clearly naming the **Goal**, breaki
 
 Rather than directing behavior, it invites contribution. Rather than consolidating power, it distributes opportunity. And by decoupling participation from permission, it supports action at the edges — where innovation often begins, and where often the largest portion of the community find a match of what needs to be done with what they are able to do
 
-**III.A — The Limits of G-O-S-R in Representing Actors**
+## III.A — The Limits of G-O-S-R in Representing Actors
 
 The G-O-S-R model is designed to clarify work. It helps surface what a focused effort is trying to achieve, what’s getting in the way, what might be done about it, and what efforts are already doing part of that work. This has proven useful for mapping local initiatives, identifying gaps, and discovering overlooked programs.
 
@@ -132,7 +132,7 @@ Without a shared way to represent these aspects of human and institutional actor
 
 G-O-S-R gives us a map of work. But to navigate that map in real-world settings — especially when forming new partnerships or evaluating readiness — we also need a structured way to describe the **actors behind the efforts**. This is where the Agent-to-Agent (A2A) protocol begins to offer new possibilities.
 
-**III.B – What G-O-S-R Already Captures About Actors**
+## III.B – What G-O-S-R Already Captures About Actors
 
 Even though the G-O-S-R framework was designed to highlight the work rather than the worker, it does include some information about who is doing that work. The Resource entries in G-O-S-R datasets typically name the organization running the program, sometimes along with a contact person, service area, or eligibility criteria. These fields offer a thin layer of actor metadata — enough to point toward an implementor, but not enough to understand or know how best to interact with them.
 
@@ -142,7 +142,7 @@ However, there are real limits to how far we can get with this minimal approach.
 
 In short, G-O-S-R already points toward actors, but it doesn’t yet describe them. To move from mapping the work to understanding the working landscape, we need a new representational layer. Fortunately, one may already exist.
 
-**III.C – What Is A2A and What Does It Offer?**
+## III.C – What Is A2A and What Does It Offer?
 
 On April 9, 2025, Google introduced the **Agent-to-Agent (A2A)** protocol to enable communication between AI agents in a decentralized ecosystem. At its core, A2A provides a structured, lightweight format for representing agents — including their identity, capabilities, preferences, and relationships — in a way that can be read and understood by other agents (and by humans).
 
@@ -170,7 +170,7 @@ This possibility opens a door: could human-based organizations — such as nonpr
 
 But there are caveats. As we’ll see next, the A2A protocol was built with a specific type of agent in mind — and it makes certain assumptions about intent, autonomy, and service delivery that don’t always translate cleanly to human-led programs or institutions.
 
-**III.D – Why Non-Computational Actors Might Fit the A2A Frame**
+## III.D – Why Non-Computational Actors Might Fit the A2A Frame
 
 Despite being originally designed for autonomous AI agents, the A2A format is surprisingly well-suited to describing human-led organizations — including nonprofits, local agencies, cooperatives, and other collective actors. Why? Because many of the same questions we ask about bots are the ones we also ask about human entities:
 
@@ -202,9 +202,9 @@ That said, there are limitations. The A2A protocol doesn’t natively include co
 
 Still, the overlap is substantial. With modest extensions, the A2A format can be adapted to accommodate human-led agents in a respectful, structured, and interoperable way. Rather than starting from scratch, we can build on what exists — and enrich it to represent the complexity and intentionality of human-centered work.
 
-**IV. Modeling Human Agents: Beyond Individuals**
+# IV. Modeling Human Agents: Beyond Individuals
 
-**IV.A – Why Individuals Are Not Our Modeling Target**
+## IV.A – Why Individuals Are Not Our Modeling Target
 
 As we begin to extend A2A to support human actors, a critical design choice comes into focus: **we are not aiming to model individual people**. This is a principled decision, rooted in both ethical caution and functional clarity. While A2A technically allows any autonomous agent to generate an AgentCard — and that could include an individual human — we consciously choose to prioritize **entities** made up of humans rather than individuals themselves. These include nonprofit organizations, public agencies, for-profit enterprises, educational bodies, civic and neighborhood coalitions, informal collectives, hybrid structures like cooperatives and public-private partnerships, labor and professional associations, charitable groups, and faith-based institutions—groupings that, despite their varied forms, operate as relatively durable, semi-public actors in the social landscape.
 
@@ -222,7 +222,7 @@ There are several reasons for this design boundary:
 
 This doesn’t mean individuals are excluded from participation. They lead, contribute to, and initiate entities. But the unit of representation — the "Agent" in A2A — should reflect **the structure that holds the work**, not merely the person who touches it.
 
-### **IV.B – Who We Do Include: Nonprofits, Government Agencies, Collaboratives, etc.**
+## IV.B – Who We Do Include: Nonprofits, Government Agencies, Collaboratives, etc.
 
 While we intentionally avoid modeling individual humans, we cast a broad and inclusive net when it comes to modeling human-based groupings. Our working definition of a “human agent” includes any semi-stable, identity-bearing entity composed of people who can initiate, maintain, or participate in a programmatic effort aligned with a Solution in the G-O-S-R model.
 
@@ -258,7 +258,7 @@ This approach lowers the barrier to participation while anchoring our metadata i
 
 Next, we’ll look at how we might describe these human agents using structured frameworks that capture their distinctive qualities.
 
-**IV.C – Frameworks for Describing Human-Based Entities**
+## IV.C – Frameworks for Describing Human-Based Entities
 
 Once we open the door to representing human-led entities in structured ways, we encounter a powerful question:  
 **How can we meaningfully describe these entities — not just what they do, but how they operate, think, and relate to others?**
@@ -285,7 +285,7 @@ These frameworks can also signal **intentional self-awareness**: when a group de
 
 Still, we must tread carefully. Overuse of typology can lead to stereotyping or shallow sorting. In the next section, we’ll propose a flexible, opt-in metadata block — called operating\_character — to encode these frameworks while guarding against misuse.
 
-**IV.D – The operating\_character Block**
+## IV.D – The operating\_character Block
 
 To encode the structured yet respectful representation of human-based entities, we propose a new optional metadata section within the AgentCard: the operating\_character block.
 
@@ -371,7 +371,7 @@ This block is not meant to be exhaustive, prescriptive, or permanent. Rather, it
 
 In the next section, we’ll examine how to keep such profiling from becoming reductive or exclusionary — and how to incorporate reflexivity and caution into the design.
 
-**IV.E – Guardrails Against Reductionism and Misuse**
+## IV.E – Guardrails Against Reductionism and Misuse
 
 As promising as the operating\_character block may be for increasing alignment, it also invites a serious ethical responsibility: **preventing reductive use, stereotyping, or exclusionary dynamics**.
 
@@ -417,9 +417,9 @@ Ultimately, our goal is **not** to predict or classify behavior, but to support 
 
 Next, we turn from the actors themselves to the **work they implement** — and a gap in the A2A model that G-O-S-R is positioned to help fill.
 
-**V. The Missing Link: Programs as Real-World Implementations**
+# V. The Missing Link: Programs as Real-World Implementations
 
-**V.A – Capabilities vs. Deployed Workstreams**
+## V.A – Capabilities vs. Deployed Workstreams
 
 A2A’s capabilities and skills blocks allow agents to declare what they can do — and in many AI and service-automation contexts, that’s enough. Capabilities serve as a menu of potential behaviors. Skills specify technical affordances. Together, they describe **what an agent is able to do** under the right conditions.
 
@@ -446,7 +446,7 @@ To carry this forward into A2A, we need a way to **declare not just what an agen
 
 In the next section, we’ll explore why this concept is missing from A2A — and why it may have been omitted by design.
 
-**V.B – Why A2A Doesn’t Model Implementation**
+## V.B – Why A2A Doesn’t Model Implementation
 
 The absence of a built-in concept of *programs* in A2A appears to be a **deliberate design choice**, not an oversight. The protocol was created to enable decentralized discovery and communication among autonomous agents — especially software-based agents — whose capabilities are often invoked on demand and dynamically composed.
 
@@ -480,7 +480,7 @@ This doesn’t necessarily mean A2A must change. It may mean we need to **layer 
 
 In the next section, we explore why that additional layer — a way to name and describe active programs — is vital to G-O-S-R’s theory of alignment.
 
-**V.C – G-O-S-R Needs Named, Contextualized Programs**
+## V.C – G-O-S-R Needs Named, Contextualized Programs
 
 At the heart of the G-O-S-R model is a simple, powerful shift:  
 **We don’t just map who exists — we map what is being done.**
@@ -513,13 +513,13 @@ In short, programs are not an afterthought. They are the **active threads of imp
 
 In the next section, we’ll explore multiple architectural options for how this could be accomplished — including both **extensions to A2A** and **layered approaches** that keep protocols separate but connected.
 
-**VI. Competing Proposals: Where Do Programs Live?**
+# VI. Competing Proposals: Where Do Programs Live?
 
 The need to represent real-world programs within an A2A-compatible ecosystem is clear. But **how** we do that is an open design question — and the answer depends on how much we want to **extend**, **adapt**, or **layer** on top of the existing A2A protocol.
 
 In this section, we examine several structural options, beginning with the most conservative.
 
-**VI.A – Option 1: Programs Embedded in AgentCard (programs\[ \])**
+## VI.A – Option 1: Programs Embedded in AgentCard (programs\[ \])
 
 One option is to treat *programs* as a **property of the agent**, encoded directly within the existing AgentCard structure as an optional array. Each entry would represent a named, contextualized implementation the agent is currently offering.
 
@@ -575,7 +575,7 @@ This model may work well for small orgs with a single service line — but becom
 
 In the next subsection, we’ll consider the opposite approach: treating each program as an agent in its own right.
 
-**VI.B – Option 2: Programs as Standalone Agents**
+## VI.B – Option 2: Programs as Standalone Agents
 
 Another approach is to treat each **program as its own agent** — effectively giving it a distinct AgentCard with a unique identifier, independent metadata, and its own lifecycle.
 
@@ -629,7 +629,7 @@ This model maximizes **addressability** and **granular discovery**, but it also 
 
 In the next section, we explore a possible middle path — one that introduces a new object type to preserve the distinction between programs and agents while still enabling integration.
 
-**VI.C – Option 3: New ProgramCard Object**
+## VI.C – Option 3: New ProgramCard Object
 
 Rather than forcing programs into the AgentCard structure or promoting them to agent status themselves, a third option introduces a new type: the **ProgramCard**.
 
@@ -697,7 +697,7 @@ This model may offer the **best of both worlds**: fidelity to real-world structu
 
 In the next subsection, we’ll explore one final approach: **not extending A2A directly at all**, but instead layering G-O-S-R’s program logic alongside A2A through a lightly-coupled bridge.
 
-**VI.D – Option 4: Overlay G-O-S-R on Top of A2A**
+## VI.D – Option 4: Overlay G-O-S-R on Top of A2A
 
 Instead of modifying or extending the A2A protocol directly, a final option is to **build an overlay**: maintain G-O-S-R’s existing data structures — including programs, solutions, and obstacles — and link to A2A’s AgentCards through simple references or bridges.
 
@@ -759,9 +759,9 @@ Still, it reinforces a key value behind both A2A and G-O-S-R: **interoperability
 
 With these options on the table, we can now reflect on what kind of coordination philosophy we actually want — and why G-O-S-R was never meant to be a coordination protocol in the traditional sense.
 
-**VII. Philosophical Alignment: Decentralized Discovery, Not Coordination**
+# VII. Philosophical Alignment: Decentralized Discovery, Not Coordination
 
-**VII.A – Why G-O-S-R Is Not a Coordination Protocol**
+## VII.A – Why G-O-S-R Is Not a Coordination Protocol
 
 At a glance, G-O-S-R’s structured representation of Goal, Obstacles, Solutions, and Resources may resemble a planning or coordination framework — a kind of blueprint for organizing action across a system. But this would be a misunderstanding.
 
@@ -789,7 +789,7 @@ In this way, G-O-S-R is not a coordination protocol but an **alignment surface**
 
 In the next section, we’ll examine the mechanics of how that alignment happens — and how transparency and agency take the place of command and control.
 
-**VII.B – The Role of Transparency and Agency**
+## VII.B – The Role of Transparency and Agency
 
 If G-O-S-R isn’t a coordination protocol, how does it help anything happen?  
 The answer lies in two principles: **transparency** and **agency**.
@@ -822,7 +822,7 @@ G-O-S-R’s role is not to plan for others, but to help them **plan with awarene
 
 In the next section, we explore how this capacity for self-alignment — enabled by transparency and protected by agency — can lead to **emergent collaboration**, without ever needing central control.
 
-**VII.C – How Self-Alignment Leads to Emergent Collaboration**
+## VII.C – How Self-Alignment Leads to Emergent Collaboration
 
 In traditional models of collaboration, partnerships are often brokered through direct outreach, formal agreements, or participation in a centralized coalition. These mechanisms work — but they are slow, selective, and often shaped by existing power dynamics.
 
@@ -872,9 +872,9 @@ This is especially powerful in ecosystems where:
 With these philosophical commitments in place, we can now turn to a practical question:  
 **How do we extend A2A to support this kind of grounded, decentralized participation — without breaking its elegant simplicity?**
 
-**VIII. Extending A2A Without Breaking It**
+# VIII. Extending A2A Without Breaking It
 
-**VIII.A – Using Extensions to Encode Real-World Meaning**
+## VIII.A – Using Extensions to Encode Real-World Meaning
 
 The Agent-to-Agent (A2A) protocol is intentionally minimal. It offers a compact schema to describe autonomous agents, their capabilities, and how they can interact — whether those agents are APIs, services, models, or (with appropriate extension) human-based entities such as nonprofits, public institutions, or coalitions. That elegant simplicity is one of its greatest strengths.
 
@@ -897,7 +897,7 @@ the ability for agents to invite **participation** — not just describe what th
 
 ---
 
-**VIII.B – Reframing “Tools” as Participation Templates**
+## VIII.B – Reframing “Tools” as Participation Templates
 
 In its current design, the A2A protocol allows agents to list **tools** — links to APIs, endpoints, or digital services that other agents can invoke. This mechanism works well in software ecosystems: one agent offers a function, another calls it. The interaction is tightly scoped and clearly defined.
 
@@ -949,7 +949,7 @@ Rather than resolving the architecture now, we’re expanding the vision of what
 
 And soon, we’ll return to the structural question better equipped to answer it.
 
-**VIII.C – Balancing Protocol Compatibility with Expressiveness**
+## VIII.C – Balancing Protocol Compatibility with Expressiveness
 
 One of A2A’s most elegant design choices is its simplicity. Its AgentCard format is deliberately minimal: a clear, JSON-based description of what an agent does, what it can respond to, and how it can be contacted or invoked. This leanness ensures that agents — whether AI models or API wrappers — can interoperate quickly and reliably, with minimal overhead.
 
@@ -1002,9 +1002,9 @@ How should programs — the concrete, replicable implementations of solutions �
 
 In the next section, we explore the introduction of a new class of participants: **Actors**. And with them, a new proposal for closing the loop between Goals, Solutions, Resources, and real-world agency.
 
-**IX – The “A” in G-O-S-R-A: Actors as Self-Aligned Agents**
+# IX – The “A” in G-O-S-R-A: Actors as Self-Aligned Agents
 
-**IX.A – Introducing “Actors” as Independent Participants**
+## IX.A – Introducing “Actors” as Independent Participants
 
 Throughout this essay, we've introduced several terms to describe participation in decentralized problem-solving systems:
 
@@ -1070,7 +1070,7 @@ And by modeling them explicitly — including their motivations, values, and ope
 This is the final transformation G-O-S-R undergoes in adopting A2A’s grammar:  
 It acknowledges the human — not just as subject, but as **agentive force**.
 
-**IX.B – Actor Motivations, Declarations, and Biases**
+## IX.B – Actor Motivations, Declarations, and Biases
 
 Once we recognize Actors as intentional participants in a decentralized solution landscape, we must ask:  
 **How can others understand what motivates them? What they care about? What conditions shape their behavior?**
@@ -1106,7 +1106,7 @@ What matters is that Actors **choose to be legible** — not for the sake of con
 In a world without central orchestration, these kinds of declarations are the connective tissue.  
 They help turn a loose network of efforts into a living ecology of responses — more adaptive, more participatory, and more reflective of the human entities doing the work.
 
-**IX.C – How Actors Discover and Connect to Resources**
+## IX.C – How Actors Discover and Connect to Resources
 
 Once an Actor declares its motivations, values, and readiness to engage, a natural question arises:  
 **How does it find the right work to align with?**
@@ -1146,13 +1146,13 @@ Over time, as more Actors declare their intentions and as more Resources are des
 
 And because no central authority dictates who participates, this becomes a **commons for decentralized problem-solving** — one where discovery, not direction, is the primary mode of movement.
 
-**X – Toward a Coherent Ecosystem of Agents and Programs**
+# X – Toward a Coherent Ecosystem of Agents and Programs
 
 As we’ve seen, the G-O-S-R-A model, extended with A2A’s Agent grammar and enriched with human-aware metadata, provides a promising foundation. But clarity of structure is essential if this model is to scale across real-world applications, tools, and collaborations.
 
 What emerges now is a layered ecosystem — one where Actors, Agents, Resources, and Programs coexist within a public problem-solving map that remains comprehensible and extensible.
 
-**X.A – A Layered Structure: Goal → Obstacles → Solutions → Resources → Actors**
+## X.A – A Layered Structure: Goal → Obstacles → Solutions → Resources → Actors
 
 At its core, the G-O-S-R-A model reveals a simple logic:
 
@@ -1178,7 +1178,7 @@ It also allows people to work at different layers:
 
 And because the model is public and portable, the same shared map can support many kinds of agents — AI, civic, organizational, or grassroots — each with different roles and affordances.
 
-**X.B – Diagrams or Tables to Illustrate Relationships**
+## X.B – Diagrams or Tables to Illustrate Relationships
 
 To make this structure widely usable, we envision visual models and simple schemas that clarify:
 
@@ -1194,7 +1194,7 @@ Such models are not just explanatory tools — they are **coordination scaffolds
 
 (We will include sample tables, cards, and relationship maps in a future appendix.)
 
-**X.C – Supporting Dynamic Alignment Without Central Control**
+## X.C – Supporting Dynamic Alignment Without Central Control
 
 The ultimate goal of this layered model is not documentation — it’s **movement**.
 
@@ -1223,7 +1223,7 @@ But the core idea will remain:
 
 That a public, interoperable structure can empower decentralized actors to find each other, align their work, and move forward — not through control, but through shared context.
 
-**XI. Next Steps and Open Questions**
+# XI. Next Steps and Open Questions
 
 The G-O-S-R-A model, enriched by A2A and extended with human-aware fields like operating\_character and participation\_template, offers a promising direction. But as with any evolving infrastructure, **clarity, caution, and community input** are essential. This section outlines next steps and unresolved challenges that future collaborators must help shape.
 
@@ -1251,7 +1251,7 @@ Each of these has trade-offs:
 
 We believe **practical experimentation** will reveal which approach best supports the actual needs of collaboration, discoverability, and interoperability. Until then, our schema must remain flexible — but well-documented enough to be used and critiqued.
 
-**XI.B – Governance, Validation, and Versioning of Extensions**
+## XI.B – Governance, Validation, and Versioning of Extensions
 
 Any ecosystem meant to outlive its first draft must face this:  
 **Who decides which extensions are legitimate?**
@@ -1270,7 +1270,7 @@ That said, we also recognize the need for **coordinated validation efforts**, es
 
 The challenge will be finding lightweight, community-trustable mechanisms to review and evolve extensions without imposing centralized control.
 
-**XI.C – How Does This Connect to Model Context Protocol (MCP)?**
+## XI.C – How Does This Connect to Model Context Protocol (MCP)?
 
 Finally, we must acknowledge the link between this modeling work and **Model Context Protocol (MCP)** — a framework for structuring AI prompts, context, and cognitive scope.
 
@@ -1287,7 +1287,7 @@ This raises several questions:
 
 We don’t yet know — but the overlap is fertile ground. As AI and human systems increasingly entangle, protocols like A2A, G-O-S-R-A, and MCP may need to **converge — or at least interoperate.**
 
-**XII – Conclusion: Building Shared Infrastructure Without Central Control**
+# XII – Conclusion: Building Shared Infrastructure Without Central Control
 
 In an age of proliferating problems and fragmented responses, the question is no longer *can we act* — it is *how do we align*?
 
