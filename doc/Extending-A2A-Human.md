@@ -932,7 +932,7 @@ In the next section, we explore the introduction of a new class of participants:
 
 ## IX.A – Introducing “Actors” as Independent Participants
 
-Throughout this essay, we've introduced several terms to describe participation in decentralized problem-solving systems:
+Throughout this discussion, we've introduced several terms to describe participation in decentralized problem-solving systems:
 
 * In **G-O-S-R**, we focus on **Resources** — concrete programs or entities implementing specific Solutions.  
     
@@ -1078,7 +1078,7 @@ As we’ve seen, the G-O-S-R-A model, extended with A2A’s Agent grammar and en
 
 What emerges now is a layered ecosystem — one where Actors, Agents, Resources, and Programs coexist within a public problem-solving map that remains comprehensible and extensible.
 
-## X.A – A Layered Structure: Goal → Obstacles → Solutions → Resources → Actors
+## X.A – A Layered Structure: Goal ← Obstacles ← Solutions ← Resources ← Actors
 
 At its core, the G-O-S-R-A model reveals a simple logic:
 
@@ -1153,7 +1153,7 @@ That a public, interoperable structure can empower decentralized actors to find 
 
 The G-O-S-R-A model, enriched by A2A and extended with human-aware fields like operating\_character and participation\_template, offers a promising direction. But as with any evolving infrastructure, **clarity, caution, and community input** are essential. This section outlines next steps and unresolved challenges that future collaborators must help shape.
 
-**XI.A – Do We Need a ProgramCard Standard?**
+## XI.A – Do We Need a ProgramCard Standard?
 
 One lingering structural question is whether **Programs** — the real-world implementations of Solutions — deserve their own formal representation within the protocol. So far, we’ve modeled them either:
 
