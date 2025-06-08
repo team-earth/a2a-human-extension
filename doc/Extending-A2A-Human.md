@@ -302,56 +302,33 @@ This block is designed to hold **declared self-descriptions** about how a human 
 * **Multi-framework Support**: Entities can include multiple framework entries if they feel that more than one system contributes to a well-rounded profile.
 
 **Example (illustrative only):**
-
-"operating\_character": {
-
-"version": "2024.1",
-
-"effective\_date": "2024-05-01",
-
-"expires": "2025-05-01",
-
-"declared\_by": "operations\_team",
-
-"spiral\_dynamics": {
-
-"blue": 0.3,
-
-"green": 0.6,
-
-"yellow": 0.1
-
-},
-
-"insights": {
-
-"profile": {
-
-  "yellow": 0.5,
-
-  "green": 0.3,
-
-  "red": 0.15,
-
-  "blue": 0.05
-
-},
-
-"notes": "Primarily ideation- and people-oriented, with some assertive and compliance-driven traits."
-
-},
-
-"governance\_style": "distributed\_consensus",
-
-"epistemic\_orientation": {
-
-"primary": "community-grounded",
-
-"secondary": "practice-informed"
-
+```
+"operating_character": {
+  "version": "2024.1",
+  "effective_date": "2024-05-01",
+  "expires": "2025-05-01",
+  "declared_by": "operations_team",
+  "spiral_dynamics": {
+    "blue": 0.3,
+    "green": 0.6,
+    "yellow": 0.1
+  },
+  "insights": {
+    "profile": {
+      "yellow": 0.5,
+      "green": 0.3,
+      "red": 0.15,
+      "blue": 0.05
+    },
+    "notes": "Primarily ideation- and people-oriented, with some assertive and compliance-driven traits."
+  },
+  "governance_style": "distributed_consensus",
+  "epistemic_orientation": {
+    "primary": "community-grounded",
+    "secondary": "practice-informed"
+  }
 }
-
-}
+```
 
 In this example:
 
@@ -525,33 +502,20 @@ One option is to treat *programs* as a **property of the agent**, encoded direct
 
 This could look something like:
 
-json
-
-CopyEdit
-
-"programs": \[
-
-{
-
-"name": "Fresh Start Housing Navigator",
-
-"description": "Provides support for housing-insecure families in Wards 7 and 8.",
-
-"aligned\\\_solution": "affordable\\\_housing\\\_access",
-
-"status": "active",
-
-"geography": \\\["DC\\\_Ward\\\_7", "DC\\\_Ward\\\_8"\\\],
-
-"modality": "in\\\_person",
-
-"eligibility": "families\\\_with\\\_children",
-
-"delivery\\\_partners": \\\["FaithCo Housing Fund", "Urban Roots Collective"\\\]
-
-}
-
-\]
+```
+"programs": [
+  {
+    "name": "Fresh Start Housing Navigator",
+    "description": "Provides support for housing-insecure families in Wards 7 and 8.",
+    "aligned_solution": "affordable_housing_access",
+    "status": "active",
+    "geography": ["DC_Ward_7", "DC_Ward_8"],
+    "modality": "in_person",
+    "eligibility": "families_with_children",
+    "delivery_partners": ["FaithCo Housing Fund", "Urban Roots Collective"]
+  }
+]
+```
 
 This model keeps everything under a single agent identity. The programs are **subcomponents** of the agent — tightly coupled to its card and governance. This mirrors how many real-world orgs operate: they maintain a central identity and portfolio of offerings.
 
@@ -582,30 +546,18 @@ Another approach is to treat each **program as its own agent** — effectively g
 Under this model, the program *is* the agent. It can declare capabilities, express operating characteristics, describe alignment with a Solution, and participate in discovery directly.
 
 For example:
-
-json
-
-CopyEdit
-
+```
 {
-
-"@type": "AgentCard",
-
-"id": "program:dc-fresh-start-housing",
-
-"name": "Fresh Start Housing Navigator",
-
-"description": "Provides support for housing-insecure families in Wards 7 and 8.",
-
-"operating\_character": { "spiral\_dynamics": { "green": 0.7 } },
-
-"capabilities": \["housing-navigation", "referrals", "case-management"\],
-
-"aligned\_solution": "affordable\_housing\_access",
-
-"parent\_agent": "agent:urban-roots-collective"
-
+  "@type": "AgentCard",
+  "id": "program:dc-fresh-start-housing",
+  "name": "Fresh Start Housing Navigator",
+  "description": "Provides support for housing-insecure families in Wards 7 and 8.",
+  "operating_character": { "spiral_dynamics": { "green": 0.7 } },
+  "capabilities": ["housing-navigation", "referrals", "case-management"],
+  "aligned_solution": "affordable_housing_access",
+  "parent_agent": "agent:urban-roots-collective"
 }
+```
 
 This structure allows the program to be addressed, referenced, versioned, and understood **independently** of the entity running it. In effect, each program becomes a **first-class participant** in the A2A ecosystem.
 
@@ -636,36 +588,21 @@ Rather than forcing programs into the AgentCard structure or promoting them to a
 This object would represent a program or workstream as a **distinct but non-autonomous entity**. It is not an agent in the A2A sense, but a **declarative artifact** associated with one or more agents. It exists to describe *what is being done* — in enough detail to enable discovery, analysis, and alignment — without implying that the program is independently capable of action or communication.
 
 Here’s a simplified example:
-
-json
-
-CopyEdit
-
+```
 {
-
-"@type": "ProgramCard",
-
-"id": "program:dc-fresh-start-housing",
-
-"name": "Fresh Start Housing Navigator",
-
-"description": "Housing support for families in DC Wards 7 and 8.",
-
-"aligned\_solution": "affordable\_housing\_access",
-
-"operated\_by": \["agent:urban-roots-collective"\],
-
-"status": "active",
-
-"delivery\_modality": "in\_person",
-
-"eligibility\_criteria": \["income\_below\_AMI", "must\_have\_children"\],
-
-"geography": \["DC\_Ward\_7", "DC\_Ward\_8"\],
-
-"tags": \["housing", "navigation", "community-based"\]
-
+  "@type": "ProgramCard",
+  "id": "program:dc-fresh-start-housing",
+  "name": "Fresh Start Housing Navigator",
+  "description": "Housing support for families in DC Wards 7 and 8.",
+  "aligned_solution": "affordable_housing_access",
+  "operated_by": ["agent:urban-roots-collective"],
+  "status": "active",
+  "delivery_modality": "in_person",
+  "eligibility_criteria": ["income_below_AMI", "must_have_children"],
+  "geography": ["DC_Ward_7", "DC_Ward_8"],
+  "tags": ["housing", "navigation", "community-based"]
 }
+```
 
 This approach offers a **layered architecture**:
 
@@ -710,28 +647,17 @@ In this model, the G-O-S-R ecosystem acts as a **complementary layer**:
 * It respects the boundaries of A2A as a protocol for agents — while layering in contextual grounding through G-O-S-R’s lens.
 
 An example G-O-S-R Resource entry might include:
-
-json
-
-CopyEdit
-
+```
 {
-
-"program\_name": "Fresh Start Housing Navigator",
-
-"solution\_id": "affordable\_housing\_access",
-
-"description": "In-person support for families seeking housing in Wards 7 and 8.",
-
-"agent\_ref": "a2a://agent/urban-roots-collective",
-
-"eligibility": "families with children under 18",
-
-"geography": \["DC\_Ward\_7", "DC\_Ward\_8"\],
-
-"status": "active"
-
+  "program_name": "Fresh Start Housing Navigator",
+  "solution_id": "affordable_housing_access",
+  "description": "In-person support for families seeking housing in Wards 7 and 8.",
+  "agent_ref": "a2a://agent/urban-roots-collective",
+  "eligibility": "families with children under 18",
+  "geography": ["DC_Ward_7", "DC_Ward_8"],
+  "status": "active"
 }
+```
 
 Here, G-O-S-R defines the **program**, while A2A defines the **actor**. The two systems remain decoupled — but interoperable.
 
@@ -1328,4 +1254,4 @@ A commons of purpose.
 A grammar of participation — that scales.
 
 The work is unfinished. That’s the point.  
-We now invite others to take part.  
+We now invite others to take part.
