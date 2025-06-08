@@ -2,7 +2,7 @@
 
 This repository proposes a structured extension to Google's [Agent-to-Agent (A2A) protocol](https://google-a2a.github.io/A2A/specification/) to support real-world, human-led programs and institutions using the G-O-S-R model (Goal ← Obstacles ← Solutions ← Resources).
 
-It defines agent structures such as `ProgramCard` and `operating_character` metadata blocks, allowing civic entities, nonprofits, governments, and grassroots programs to participate in agent ecosystems alongside LLM-based agents.
+It defines agent structures such as `ProgramCard`, `ParticipationTemplate`, and `operating_character` metadata blocks, allowing civic entities, nonprofits, governments, and grassroots programs to participate in agent ecosystems alongside LLM-based agents.
 
 ---
 
@@ -10,7 +10,7 @@ It defines agent structures such as `ProgramCard` and `operating_character` meta
 
 - Extend A2A protocol to represent human-aligned entities  
 - Support structured discovery and collaboration via AgentCards  
-- Encode motivational, communicative, and governance metadata using recognized frameworks (e.g. Spiral Dynamics, Hofstede)
+- Encode motivational, communicative, and governance metadata using recognized frameworks (e.g., Spiral Dynamics, Hofstede)
 
 ---
 
@@ -82,5 +82,5 @@ For inquiries: [team.earth/contact](https://team.earth/contact)
   Presented in the Blue Sky Ideas Track at the AAAI Conference on Human Computation and Crowdsourcing (HCOMP 2020).  
   [Conference program](https://www.humancomputation.com/2020/program.html)
 
-- **Kells, K. (2019, November 28).** *A Proposed Practical Problem-Solving Framework for Multi-Stakeholder Initiatives in Socio-Ecological Systems Based on a Model of the Human Cognitive Problem-Solving Process.*  
+- **Kells, K. (2019, November 28).** *A Proposed Practical Problem-Solving Framework for Multi-Stakeholder Initiatives in SocioEcological Systems Based on a Model of the Human Cognitive Problem-Solving Process.*  
   [arXiv:1911.13155](https://arxiv.org/abs/1911.13155)
