@@ -51,6 +51,14 @@ a2a-human-extension/
 
 ---
 
+## 📝 Conference Presentation
+
+A paper based on this work has been accepted for presentation at the HLDM'25 workshop (ECML PKDD 2025, Porto).
+
+*"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*
+
+---
+
 ## 📜 Licensing
 
 - **Documentation**: [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)  
