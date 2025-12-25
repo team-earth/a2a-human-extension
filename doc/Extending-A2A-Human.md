@@ -4,7 +4,7 @@
 > This work was presented at the HLDM'25 Workshop (ECML PKDD 2025, Porto, September 15, 2025)  
 > **Paper:** *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*  
 > **Download PDF:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf  
-> **LaTeX source:** https://github.com/team-earth/a2a-human-extension/tree/main/papers/HLDM2025-latex-source
+> **LaTeX source (paper.tex):** https://raw.githubusercontent.com/team-earth/a2a-human-extension/main/papers/HLDM2025-latex-source/paper.tex
 
 ---
 
