@@ -53,7 +53,7 @@ a2a-human-extension/
 
 ## 📝 Conference Presentation
 
-A paper based on this work was presented at [HLDM'25](https://sml.disi.unitn.it/hldm25.html) (ECML PKDD 2025, Porto, Portugal).
+A paper based on this work was presented at [HLDM'25](https://sml.disi.unitn.it/hldm25.html) on September 15, 2025 (ECML PKDD 2025, Porto, Portugal).
 
 *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*  
 [[camera-ready PDF](doc/Kevin-Kells-Integrating-Civic-Initiatives-into-AI-Agent-Ecosystems-A-Human-Aligned-Extension-of-the-A2A-Protocol-HLDM-Sept-2025.pdf)]
