@@ -26,6 +26,18 @@ It defines agent structures like `ProgramCard`, `ParticipationTemplate`, and `op
 
 ---
 
+## 📝 Conference Paper
+
+A paper based on this work was presented at [HLDM'25](https://sml.disi.unitn.it/hldm25.html) on September 15, 2025 (ECML PKDD 2025, Porto, Portugal).
+
+**Title:** *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*
+
+**Download PDF:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf
+
+**More info:** [PUBLICATIONS.md](PUBLICATIONS.md) · [Papers folder](papers/)
+
+---
+
 ## 📂 Repository Structure
 
 ```
@@ -53,18 +65,6 @@ a2a-human-extension/
 - Current Version: `v0.1.3` (2025-06-08)  
 - Draft status: Open for collaborative review  
 - Target audience: Developers, civic technologists, public sector integrators
-
----
-
-## 📝 Conference Presentation
-
-A paper based on this work was presented at [HLDM'25](https://sml.disi.unitn.it/hldm25.html) on September 15, 2025 (ECML PKDD 2025, Porto, Portugal).
-
-**Title:** *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*
-
-**Download PDF:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf
-
-**More info:** [PUBLICATIONS.md](PUBLICATIONS.md) · [Papers folder](papers/)
 
 ---
 
