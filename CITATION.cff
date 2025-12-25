@@ -24,6 +24,7 @@ preferred-citation:
   year: 2025
   month: 9
   url: "https://sml.disi.unitn.it/hldm25.html"
+  pdf: "https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf"
 keywords:
   - "agent-to-agent protocol"
   - "A2A"

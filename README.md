@@ -60,7 +60,7 @@ a2a-human-extension/
 A paper based on this work was presented at [HLDM'25](https://sml.disi.unitn.it/hldm25.html) on September 15, 2025 (ECML PKDD 2025, Porto, Portugal).
 
 *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*  
-[[PDF](papers/HLDM2025-A2A-Human-Extension.pdf)] · [[Papers folder](papers/)]
+[[PDF](papers/HLDM2025-A2A-Human-Extension.pdf)] · [[Direct download](https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf)] · [[Papers folder](papers/)]
 
 ---
 

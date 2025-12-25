@@ -14,7 +14,8 @@ Part of ECML PKDD 2025
 
 **Workshop:** https://sml.disi.unitn.it/hldm25.html
 
-**PDF:** [HLDM2025-A2A-Human-Extension.pdf](HLDM2025-A2A-Human-Extension.pdf)
+**PDF:** [HLDM2025-A2A-Human-Extension.pdf](HLDM2025-A2A-Human-Extension.pdf)  
+**Direct download:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf
 
 ### Abstract
 
