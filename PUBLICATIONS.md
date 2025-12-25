@@ -18,7 +18,9 @@ Part of ECML PKDD 2025
 
 **PDF download:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf
 
-**File:** papers/HLDM2025-A2A-Human-Extension.pdf
+**LaTeX source:** https://github.com/team-earth/a2a-human-extension/tree/main/papers/HLDM2025-latex-source
+
+**Files:** papers/HLDM2025-A2A-Human-Extension.pdf · papers/HLDM2025-latex-source/
 
 ---
 
