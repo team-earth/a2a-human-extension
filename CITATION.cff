@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+authors:
+  - family-names: "Kells"
+    given-names: "Kevin"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    website: "https://kevinkells.com"
+title: "Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"
+version: 0.1.3
+date-released: 2025-09-15
+url: "https://github.com/team-earth/a2a-human-extension"
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Kells"
+      given-names: "Kevin"
+  title: "Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"
+  collection-title: "Proceedings of the Third Workshop on Hybrid Human-Machine Learning and Decision Making (HLDM'25)"
+  conference:
+    name: "HLDM'25 - Third Workshop on Hybrid Human-Machine Learning and Decision Making"
+    location: "Porto, Portugal"
+    date-start: 2025-09-15
+    date-end: 2025-09-15
+  year: 2025
+  month: 9
+  url: "https://sml.disi.unitn.it/hldm25.html"
+keywords:
+  - "agent-to-agent protocol"
+  - "A2A"
+  - "civic technology"
+  - "human-AI collaboration"
+  - "agent ecosystems"
+  - "GOSR model"
+  - "institutional agents"
+  - "human-aligned AI"
+

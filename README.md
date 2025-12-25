@@ -32,9 +32,13 @@ It defines agent structures like `ProgramCard`, `ParticipationTemplate`, and `op
 a2a-human-extension/
 ├── doc/                    # Core markdown spec and drafts
 │   └── Extending-A2A-Human.md
+├── papers/                 # Academic publications and presentations
+│   ├── README.md
+│   └── HLDM2025-A2A-Human-Extension.pdf
 ├── schema/                 # JSON Schemas for ProgramCard, metadata, etc.
 ├── examples/               # Sample AgentCards and use cases
 ├── diagrams/               # Visuals (optional)
+├── CITATION.cff            # Citation metadata for academic use
 ├── VERSION.md              # Version history and changelog
 ├── LICENSE                 # MIT License (for schema/code)
 ├── LICENSE.docs            # CC BY-SA 4.0 License (for documentation)
@@ -56,7 +60,7 @@ a2a-human-extension/
 A paper based on this work was presented at [HLDM'25](https://sml.disi.unitn.it/hldm25.html) on September 15, 2025 (ECML PKDD 2025, Porto, Portugal).
 
 *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*  
-[[camera-ready PDF](doc/Kevin-Kells-Integrating-Civic-Initiatives-into-AI-Agent-Ecosystems-A-Human-Aligned-Extension-of-the-A2A-Protocol-HLDM-Sept-2025.pdf)]
+[[PDF](papers/HLDM2025-A2A-Human-Extension.pdf)] · [[Papers folder](papers/)]
 
 ---
 
