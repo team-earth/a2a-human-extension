@@ -1,6 +1,8 @@
 # A2A Human-Aligned Extension
 
-
+> **📄 Conference Paper (HLDM'25):** *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*  
+> **PDF Download:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf  
+> Presented at HLDM'25 Workshop, ECML PKDD 2025, Porto, Portugal (September 15, 2025)
 
 This repository proposes a structured extension to Google's [Agent-to-Agent (A2A) protocol](https://google-a2a.github.io/A2A/specification/) to support real-world, human-led programs and institutions using the G-O-S-R model (Goal ← Obstacles ← Solutions ← Resources).
 

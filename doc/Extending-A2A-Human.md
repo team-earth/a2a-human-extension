@@ -1,3 +1,12 @@
+# Extending A2A for Human-Aligned Collaboration
+
+> **📄 Academic Paper Available**  
+> This work was presented at the HLDM'25 Workshop (ECML PKDD 2025, Porto, September 15, 2025)  
+> **Paper:** *"Integrating Civic Initiatives into AI Agent Ecosystems: A Human-Aligned Extension of the A2A Protocol"*  
+> **Download PDF:** https://github.com/team-earth/a2a-human-extension/raw/main/papers/HLDM2025-A2A-Human-Extension.pdf
+
+---
+
 # Executive Summary
 
 This document proposes a practical extension of the Agent-to-Agent (A2A) protocol to better represent **human-led organizations and real-world programs** within decentralized, collaborative ecosystems. It addresses a key gap in current interoperability standards: while A2A excels at describing autonomous software agents, it lacks structures for modeling the nuanced, context-rich work of nonprofits, agencies, and coalitions implementing solutions to complex social challenges.
