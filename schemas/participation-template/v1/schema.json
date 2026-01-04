@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://team-earth.github.io/a2a-human-extension/schemas/participation-template/v1/schema.json",
+  "title": "Participation Template",
+  "description": "Provides structured guidance on how to join, replicate, support, or engage with a program. Unlike transactional tool APIs, participation templates are relational and adaptive, describing the style and context of participation.",
+  "type": "object",
+  "required": ["id", "type", "label", "summary"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique identifier for this participation template (kebab-case)"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "apply",
+        "fund",
+        "sponsor",
+        "integrate",
+        "adopt",
+        "implement",
+        "collaborate",
+        "participate",
+        "volunteer",
+        "reference",
+        "cite",
+        "partner",
+        "teach",
+        "develop",
+        "document",
+        "convene",
+        "replicate",
+        "support",
+        "contribute"
+      ],
+      "description": "Type of participation being offered"
+    },
+    "label": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Short, human-readable label for this participation option"
+    },
+    "summary": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Brief description of what this participation entails"
+    },
+    "description": {
+      "type": "string",
+      "description": "Detailed explanation of the participation opportunity"
+    },
+    "eligibility": {
+      "type": "string",
+      "description": "Who can participate (organizations, individuals, specific roles, etc.)"
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Ordered steps for how to participate"
+    },
+    "link": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL to more information, application form, or contact method"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Expected time commitment or timeline"
+    },
+    "commitment_level": {
+      "type": "string",
+      "enum": ["minimal", "low", "moderate", "high", "extensive", "variable", "flexible"],
+      "description": "Level of commitment required"
+    },
+    "support_available": {
+      "type": "string",
+      "description": "What support or guidance will be provided to participants"
+    },
+    "technical_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Technical prerequisites or requirements"
+    },
+    "skills_needed": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Skills or expertise needed"
+    },
+    "benefits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "What participants gain from participation"
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Expected outcomes or deliverables"
+    },
+    "cost": {
+      "type": "object",
+      "properties": {
+        "financial": {
+          "type": "string",
+          "description": "Any financial costs"
+        },
+        "time": {
+          "type": "string",
+          "description": "Time investment"
+        },
+        "other": {
+          "type": "string",
+          "description": "Other costs or commitments"
+        }
+      }
+    },
+    "capacity": {
+      "type": "object",
+      "properties": {
+        "current": {
+          "type": "string",
+          "description": "Current capacity or status"
+        },
+        "maximum": {
+          "type": ["number", "string"],
+          "description": "Maximum number of participants or 'unlimited'"
+        },
+        "waiting_list": {
+          "type": "boolean",
+          "description": "Whether there is a waiting list"
+        }
+      }
+    },
+    "frequency": {
+      "type": "string",
+      "description": "How often this participation opportunity is available"
+    },
+    "location": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["remote", "in-person", "hybrid", "varies"]
+        },
+        "details": {
+          "type": "string",
+          "description": "Specific location details if applicable"
+        }
+      }
+    },
+    "language": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "description": "Languages supported (ISO 639-1 codes)"
+    },
+    "accessibility": {
+      "type": "string",
+      "description": "Accessibility accommodations available"
+    },
+    "contact": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "person": {
+          "type": "string"
+        }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Examples of past participants or implementations"
+    },
+    "related_templates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "IDs of related participation templates"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "created": {
+          "type": "string",
+          "format": "date"
+        },
+        "updated": {
+          "type": "string",
+          "format": "date"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "paused", "closed", "coming-soon"]
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

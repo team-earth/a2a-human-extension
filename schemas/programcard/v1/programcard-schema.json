@@ -1,0 +1,370 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://team-earth.github.io/a2a-human-extension/schemas/programcard/v1/programcard-schema.json",
+  "title": "ProgramCard - Human-Aligned Extension to A2A Protocol",
+  "description": "A schema for describing human-led civic programs, organizations, and initiatives in a machine-readable format that extends the A2A protocol with human-aligned metadata.",
+  "type": "object",
+  "required": ["type", "version", "program"],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "Reference to this schema"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of the ProgramCard format"
+    },
+    "type": {
+      "type": "string",
+      "const": "ProgramCard",
+      "description": "Type identifier for this card"
+    },
+    "created": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this card was first created"
+    },
+    "updated": {
+      "type": "string",
+      "format": "date",
+      "description": "Date this card was last updated"
+    },
+    "program": {
+      "type": "object",
+      "required": ["name", "summary", "description"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Full name of the program or organization"
+        },
+        "short_name": {
+          "type": "string",
+          "description": "Abbreviated or common name"
+        },
+        "summary": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Brief summary suitable for search results and listings"
+        },
+        "description": {
+          "type": "string",
+          "description": "Comprehensive description of the program's purpose and approach"
+        },
+        "purpose": {
+          "type": "object",
+          "properties": {
+            "mission": {
+              "type": "string",
+              "description": "Primary mission statement"
+            },
+            "theory_of_change": {
+              "type": "string",
+              "description": "How the program creates impact"
+            },
+            "intended_impact": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Specific intended outcomes"
+            }
+          }
+        },
+        "affiliation": {
+          "type": "object",
+          "properties": {
+            "primary_organization": {
+              "type": "string"
+            },
+            "academic_affiliation": {
+              "type": "string"
+            },
+            "founding_researcher": {
+              "type": "string"
+            },
+            "institutional_partners": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "scope": {
+          "type": "object",
+          "properties": {
+            "domain": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "target_populations": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "scale": {
+              "type": "string",
+              "enum": ["local", "regional", "national", "international", "global"]
+            },
+            "maturity": {
+              "type": "string"
+            }
+          }
+        },
+        "location": {
+          "type": "object",
+          "properties": {
+            "operational_base": {
+              "type": "string"
+            },
+            "geographic_reach": {
+              "type": "string"
+            },
+            "languages": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z]{2}$"
+              }
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "website": {
+              "type": "string",
+              "format": "uri"
+            },
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "resources_page": {
+              "type": "string",
+              "format": "uri"
+            },
+            "github": {
+              "type": "string",
+              "format": "uri"
+            },
+            "documentation": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        },
+        "eligibility": {
+          "type": "object",
+          "properties": {
+            "participation_criteria": {
+              "type": "string"
+            },
+            "restrictions": {
+              "type": "string"
+            },
+            "cost": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "gosr_integration": {
+      "type": "object",
+      "description": "Integration with the Goal-Obstacle-Solution-Resource framework",
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "implements_solutions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "addresses_obstacles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "contributes_to_goal": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "provides_resources": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "availability": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "operating_character": {
+      "$ref": "https://team-earth.github.io/a2a-human-extension/schemas/operating-character/v1/schema.json"
+    },
+    "participation_templates": {
+      "type": "array",
+      "items": {
+        "$ref": "https://team-earth.github.io/a2a-human-extension/schemas/participation-template/v1/schema.json"
+      }
+    },
+    "publications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "venue": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "location": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "type": {
+            "type": "string",
+            "enum": ["conference paper", "journal article", "preprint", "workshop paper", "plenary talk", "poster", "technical report"]
+          }
+        }
+      }
+    },
+    "technical_specifications": {
+      "type": "object",
+      "properties": {
+        "schemas": {
+          "type": "object"
+        },
+        "api_endpoints": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "file_formats": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "discovery_mechanisms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "versioning_scheme": {
+          "type": "string"
+        }
+      }
+    },
+    "limitations_and_boundaries": {
+      "type": "object",
+      "properties": {
+        "explicit_exclusions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "current_limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ethical_commitments": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "status": {
+      "type": "object",
+      "properties": {
+        "maturity": {
+          "type": "string",
+          "enum": ["concept", "pilot", "early-stage adoption", "established", "mature", "legacy"]
+        },
+        "availability": {
+          "type": "string",
+          "enum": ["publicly available", "invite-only", "closed", "development"]
+        },
+        "maintenance": {
+          "type": "string"
+        },
+        "community": {
+          "type": "string"
+        },
+        "funding": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "card_maintainer": {
+          "type": "string"
+        },
+        "last_verified": {
+          "type": "string",
+          "format": "date"
+        },
+        "next_review": {
+          "type": "string",
+          "format": "date"
+        },
+        "changelog_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "license": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "type": "string"
+            },
+            "documentation": {
+              "type": "string"
+            },
+            "data": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

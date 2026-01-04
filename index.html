@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2A Human-Aligned Extension - Schemas</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .subtitle { opacity: 0.9; font-size: 1.1rem; }
+        .schema-list {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .schema-item {
+            padding: 1.5rem;
+            margin: 1rem 0;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 4px;
+        }
+        .schema-item h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        .schema-item p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        code {
+            background: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #764ba2;
+            font-size: 0.9rem;
+            display: block;
+            margin: 0.5rem 0;
+            word-break: break-all;
+        }
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover { text-decoration: underline; }
+        .version { 
+            display: inline-block;
+            background: #764ba2;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>A2A Human-Aligned Extension</h1>
+        <p class="subtitle">JSON Schemas for Human-Led Civic Programs in Agent Ecosystems</p>
+    </header>
+
+    <div class="schema-list">
+        <h2>Available Schemas <span class="version">v1</span></h2>
+        
+        <div class="schema-item">
+            <h3>ProgramCard Schema</h3>
+            <p>Complete schema for describing human-led civic programs, organizations, and initiatives with G-O-S-R integration, operating character, and participation templates.</p>
+            <code>https://team-earth.github.io/a2a-human-extension/schemas/programcard/v1/programcard-schema.json</code>
+            <a href="schemas/programcard/v1/programcard-schema.json">View Schema →</a>
+        </div>
+
+        <div class="schema-item">
+            <h3>Operating Character Schema</h3>
+            <p>Schema for encoding organizational style, motivation, and interaction patterns using Spiral Dynamics, Hofstede dimensions, and Insights Discovery frameworks.</p>
+            <code>https://team-earth.github.io/a2a-human-extension/schemas/operating-character/v1/schema.json</code>
+            <a href="schemas/operating-character/v1/schema.json">View Schema →</a>
+        </div>
+
+        <div class="schema-item">
+            <h3>Participation Template Schema</h3>
+            <p>Schema for structured guidance on how to join, replicate, support, or engage with programs. Enables relational and adaptive participation beyond transactional APIs.</p>
+            <code>https://team-earth.github.io/a2a-human-extension/schemas/participation-template/v1/schema.json</code>
+            <a href="schemas/participation-template/v1/schema.json">View Schema →</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="https://github.com/team-earth/a2a-human-extension">GitHub Repository</a> |
+            <a href="doc/Extending-A2A-Human.md">Documentation</a> |
+            <a href="papers/HLDM2025-A2A-Human-Extension.pdf">HLDM'25 Paper</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            Licensed under MIT (schemas) and CC BY-SA 4.0 (documentation)
+        </p>
+    </footer>
+</body>
+</html>
