@@ -1,0 +1,61 @@
+{
+  "$schema": "https://google-a2a.github.io/A2A/specification/agentcard-schema.json",
+  "version": "1.0.0",
+  "type": "AgentCard",
+  "created": "2026-01-04",
+  "updated": "2026-01-04",
+  
+  "agent": {
+    "name": "GOSR.ai Civic Program Agent",
+    "description": "AI agent that understands and can interact with civic programs using the human-aligned A2A extension",
+    "contact": {
+      "website": "https://gosr.ai",
+      "email": "kkells@uottawa.ca"
+    }
+  },
+  
+  "capabilities": {
+    "extensions": [
+      {
+        "uri": "https://gosr.ai/a2a/extensions/v1/programcard",
+        "version": "1.0.0",
+        "required": false,
+        "description": "Understands ProgramCards with operating_character, participation_templates, and GOSR integration. Can assess alignment, recommend participation pathways, and reason about civic program ecosystems.",
+        "supported_features": [
+          "operating_character interpretation (Spiral Dynamics, Hofstede, Insights Discovery)",
+          "participation_template parsing and recommendation",
+          "gosr_integration semantic positioning",
+          "alignment assessment between programs and goals",
+          "participation pathway matching based on user context"
+        ]
+      }
+    ],
+    "supported_formats": ["application/json"],
+    "languages": ["en"]
+  },
+  
+  "use_cases": [
+    {
+      "title": "Program Discovery",
+      "description": "Help users find civic programs that match their values, communication style, and desired level of engagement"
+    },
+    {
+      "title": "Alignment Assessment",
+      "description": "Analyze compatibility between programs and user/organizational operating character for better collaboration fit"
+    },
+    {
+      "title": "Participation Guidance",
+      "description": "Recommend specific participation pathways based on user skills, availability, and goals"
+    },
+    {
+      "title": "GOSR Mapping",
+      "description": "Position programs within Goal-Obstacle-Solution-Resource frameworks to identify gaps and opportunities"
+    }
+  ],
+  
+  "metadata": {
+    "maintainer": "Kevin Kells",
+    "status": "reference implementation",
+    "license": "MIT"
+  }
+}
