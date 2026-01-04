@@ -68,7 +68,7 @@
       },
       "additionalProperties": false
     },
-    "hofstede": {
+    "hofstede_cultural_dimensions": {
       "type": "object",
       "description": "Cultural dimensions based on Hofstede's framework (0-100 scale)",
       "properties": {
@@ -115,7 +115,7 @@
       },
       "additionalProperties": false
     },
-    "insights": {
+    "insights_discovery": {
       "oneOf": [
         {
           "type": "string",
