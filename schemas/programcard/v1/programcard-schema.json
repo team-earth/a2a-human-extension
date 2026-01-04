@@ -175,9 +175,23 @@
         }
       }
     },
+    "gosr_references": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Simple format: Array of G-O-S-R identifiers (Goals, Obstacles, or Solutions) this program relates to"
+    },
+    "implements_solution": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Array of Solution identifiers from a shared G-O-S-R map that this program implements"
+    },
     "gosr_integration": {
       "type": "object",
-      "description": "Integration with the Goal-Obstacle-Solution-Resource framework",
+      "description": "Comprehensive format: Detailed integration with the Goal-Obstacle-Solution-Resource framework",
       "properties": {
         "role": {
           "type": "string"

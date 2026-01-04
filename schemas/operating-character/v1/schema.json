@@ -68,7 +68,7 @@
       },
       "additionalProperties": false
     },
-    "hofstede_cultural_dimensions": {
+    "hofstede": {
       "type": "object",
       "description": "Cultural dimensions based on Hofstede's framework (0-100 scale)",
       "properties": {
@@ -115,36 +115,46 @@
       },
       "additionalProperties": false
     },
-    "insights_discovery": {
-      "type": "object",
-      "description": "Communication and energy preferences based on Insights Discovery / Jungian types",
-      "properties": {
-        "primary": {
+    "insights": {
+      "oneOf": [
+        {
           "type": "string",
           "enum": ["red", "blue", "yellow", "green"],
-          "description": "Primary color energy: red (direct/decisive), blue (analytical/precise), yellow (optimistic/enthusiastic), green (supportive/harmonious)"
+          "description": "Simple format: single dominant color (red=direct, blue=analytical, yellow=optimistic, green=supportive)"
         },
-        "secondary": {
-          "type": "string",
-          "enum": ["red", "blue", "yellow", "green"],
-          "description": "Secondary color energy"
-        },
-        "tertiary": {
-          "type": "string",
-          "enum": ["red", "blue", "yellow", "green"],
-          "description": "Tertiary color energy"
-        },
-        "minor": {
-          "type": "string",
-          "enum": ["red", "blue", "yellow", "green"],
-          "description": "Minor/least dominant color energy"
-        },
-        "interpretation": {
-          "type": "string",
-          "description": "Human-readable interpretation of the communication style for context-aware collaboration"
+        {
+          "type": "object",
+          "description": "Detailed format: Communication and energy preferences based on Insights Discovery / Jungian types",
+          "properties": {
+            "primary": {
+              "type": "string",
+              "enum": ["red", "blue", "yellow", "green"],
+              "description": "Primary color energy"
+            },
+            "secondary": {
+              "type": "string",
+              "enum": ["red", "blue", "yellow", "green"],
+              "description": "Secondary color energy"
+            },
+            "tertiary": {
+              "type": "string",
+              "enum": ["red", "blue", "yellow", "green"],
+              "description": "Tertiary color energy"
+            },
+            "minor": {
+              "type": "string",
+              "enum": ["red", "blue", "yellow", "green"],
+              "description": "Minor/least dominant color energy"
+            },
+            "interpretation": {
+              "type": "string",
+              "description": "Human-readable interpretation"
+            }
+          },
+          "required": ["primary"],
+          "additionalProperties": false
         }
-      },
-      "additionalProperties": false
+      ]
     },
     "decision_making_style": {
       "type": "string",
